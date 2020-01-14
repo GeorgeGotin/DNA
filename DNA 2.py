@@ -42,5 +42,6 @@ for i in range(len(text) - k):
 		f[w] = f[w] + 1
 print(f)
 s = sort(f)
-print(s[0],f[s[0]],'\n',s[len(s)-1],f[s[len(s)-1]])
+for i in range(len(s)):
+ print('{}. {} - {} times'.format(i+1,s[i],f[s[i]]))
 
